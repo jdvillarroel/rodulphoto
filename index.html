@@ -15,6 +15,10 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
 
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet"> 
+
     <title>Rodulphoto</title>
 </head>
 
@@ -57,9 +61,34 @@
         </main>        
     </div>
     <section id="gallery">
+        <h2>Gallery</h2>
         <div class="container">
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-a4535441-88e3-435e-aa05-ff1706199adc"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <div>
+                    <label for="fName">First Name</label>
+                    <input type="text" name="fName" id="fName" required />                    
+                </div>
+                <div>
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="lName" id="lName" required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                
+                <textarea name="message" id="message" cols="30" rows="10">
+                    Your message...
+                </textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
     <!-- main content -->

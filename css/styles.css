@@ -19,6 +19,7 @@ body {
   -webkit-backdrop-filter: blur(20px) brightness(40%) grayscale(30%);
           backdrop-filter: blur(20px) brightness(40%) grayscale(30%);
   position: relative;
+  font-family: "Playfair Display", serif;
 }
 
 .container {
@@ -153,6 +154,7 @@ nav {
       grid-template-columns: 35% 1fr;
   -ms-grid-rows: 75vh;
       grid-template-rows: 75vh;
+  margin-bottom: 60px;
 }
 
 #hero .side-bar {
@@ -174,12 +176,12 @@ nav {
 }
 
 #hero .side-bar h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 #hero .side-bar p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 0 20px;
   margin: 10px auto;
@@ -245,7 +247,15 @@ nav {
 
 #gallery {
   background: white;
-  margin: 60px auto;
+  text-align: center;
+}
+
+#gallery h2 {
+  color: #272727;
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }
 
 .eui-widget-title {
@@ -253,6 +263,21 @@ nav {
   color: #272727;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#contact {
+  background-color: #272727;
+  text-align: center;
+}
+
+#contact h2 {
+  position: relative;
+  top: 20px;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 /*************************** Footer Section ***************************/
