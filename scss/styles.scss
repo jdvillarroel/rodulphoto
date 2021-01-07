@@ -76,7 +76,7 @@ nav {
             height: auto;
             margin-right: 10px;
 
-            @media screen and (max-width: 375px) {
+            @media screen and (max-width: 374px) {
                 display: none;
             }
         }
@@ -168,7 +168,7 @@ nav {
             text-decoration: none;
             text-transform: uppercase;
             color: $secondary-color;
-            padding: 10px 60px;
+            padding: 15px 80px;
             background-color: $main-color;
             font-family: $secondary-font;
             font-size: 0.9rem;
@@ -216,12 +216,12 @@ nav {
 // ******************** Gallery Section
 
 #gallery {
-    background: $main-color;
+    background: $secondary-color;
     margin: 60px auto;
 }
 .eui-widget-title {
     font-family: $secondary-font;
-    color: $secondary-color;
+    color: $main-color;
     margin-top: 20px;
     margin-bottom: 20px;
 }

@@ -82,7 +82,7 @@ nav {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .logo-container a img {
     display: none;
   }
@@ -190,7 +190,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 10px 60px;
+  padding: 15px 80px;
   background-color: #272727;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
@@ -242,13 +242,13 @@ nav {
 }
 
 #gallery {
-  background: #272727;
+  background: white;
   margin: 60px auto;
 }
 
 .eui-widget-title {
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #272727;
   margin-top: 20px;
   margin-bottom: 20px;
 }
