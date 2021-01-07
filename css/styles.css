@@ -151,6 +151,8 @@ nav {
   display: grid;
   -ms-grid-columns: 35% 1fr;
       grid-template-columns: 35% 1fr;
+  -ms-grid-rows: 75vh;
+      grid-template-rows: 75vh;
 }
 
 #hero .side-bar {
@@ -256,8 +258,24 @@ nav {
 /*************************** Footer Section ***************************/
 footer {
   width: 100%;
-  height: 10vh;
-  margin-top: 20px;
+  height: 15vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .social-links-container {
