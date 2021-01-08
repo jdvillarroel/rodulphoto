@@ -246,6 +246,7 @@ nav {
 #contact {
     background-color: $main-color;
     text-align: center;
+    padding-bottom: 20px;
 
     .container {
 
@@ -272,7 +273,74 @@ nav {
                 clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 90%, 0 50%);
             }
         }
-            
+        
+        form {
+            div {
+                margin: 20px auto;
+                width: 80%;
+                display: relative;
+
+                input {
+                    width: 60%;
+                    height: 40px;
+                    // border-radius: 5px;
+                    padding: 5px;
+                    font-family: $secondary-font;
+
+                    @media screen and (max-width: 850px) {
+                        width: 90%;
+                    }
+
+                    @media screen and (max-width: 675px) {
+                        width: 100%;
+                    }
+                }
+
+                @media screen and (max-width: 675px) {
+                    width: 100%;
+                }
+            }
+
+            textarea {
+                width: 60%;
+                // border-radius: 5px;
+                padding: 5px;
+                font-family: $secondary-font;
+
+                @media screen and (max-width: 850px) {
+                    width: 90%;
+                }
+
+                @media screen and (max-width: 675px) {
+                    width: 100%;
+                }
+            }
+
+            .submit-btn {
+                background-color: rgba(255, 255, 255, 1);
+                font-family: $secondary-font;
+                font-weight: 600;
+                color: $main-color;
+                padding: 16px 20px;
+                cursor: pointer;
+                width: 60%;
+                transition: all ease-in-out 300ms;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: $secondary-color;
+                    border: solid white 2px;
+                }
+
+                @media screen and (max-width: 850px) {
+                    width: 90%;
+                }
+
+                @media screen and (max-width: 675px) {
+                    width: 100%;
+                }
+            }
+        }        
     }
 
     

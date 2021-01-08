@@ -268,6 +268,7 @@ nav {
 #contact {
   background-color: #272727;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 #contact .container .contact-title {
@@ -298,6 +299,85 @@ nav {
   #contact .container .contact-title {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 90%, 0 50%);
             clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 90%, 0 50%);
+  }
+}
+
+#contact .container form div {
+  margin: 20px auto;
+  width: 80%;
+  display: relative;
+}
+
+#contact .container form div input {
+  width: 60%;
+  height: 40px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  #contact .container form div input {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #contact .container form div input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #contact .container form div {
+    width: 100%;
+  }
+}
+
+#contact .container form textarea {
+  width: 60%;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  #contact .container form textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #contact .container form textarea {
+    width: 100%;
+  }
+}
+
+#contact .container form .submit-btn {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #272727;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 60%;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+#contact .container form .submit-btn:hover {
+  background-color: #272727;
+  color: white;
+  border: solid white 2px;
+}
+
+@media screen and (max-width: 850px) {
+  #contact .container form .submit-btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #contact .container form .submit-btn {
+    width: 100%;
   }
 }
 
