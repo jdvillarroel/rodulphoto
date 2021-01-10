@@ -50,9 +50,8 @@ nav {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 760px) {
   nav {
-    height: 15vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -78,17 +77,13 @@ nav {
   width: 30px;
   height: auto;
   margin-right: 10px;
+  position: relative;
+  top: 5px;
 }
 
 @media screen and (max-width: 374px) {
   .logo-container a img {
     display: none;
-  }
-}
-
-@media screen and (max-width: 745px) {
-  .logo-container {
-    margin-bottom: 20px;
   }
 }
 
@@ -139,7 +134,7 @@ nav {
   width: 100%;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 760px) {
   .nav-links-container {
     display: none;
   }
