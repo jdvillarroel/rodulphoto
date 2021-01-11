@@ -144,6 +144,7 @@ nav {
     grid-template-rows: 75vh;
     margin-top: 60px;
     margin-bottom: 60px;
+    position: relative;
 
     .side-bar {
         background-color: $secondary-color;
@@ -187,7 +188,7 @@ nav {
                 font-weight: 600;
             }
 
-            @media screen and (max-width: 950px) {
+            @media screen and (max-width: 1100px) {
                 position: relative;
                 // bottom: 0px;
                 margin: 15px auto;
@@ -197,14 +198,19 @@ nav {
     }
 
     .hero-img-container {
+        width: 100%;
+        height: auto;
         overflow: hidden;
         position: relative;
+        display: flex;
 
         .hero-img {
             background-color: rgba(0, 0, 0, 0.5);
             width: 100%;
-            height: 100%;
+            // height: auto;
             transition: all ease-in-out 300ms;
+            object-fit: cover;
+            
 
             &:hover {
                 opacity: 0.9;
@@ -213,7 +219,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1100px) {
         grid-template-columns: 1fr;
         grid-template-rows: 200px 1fr;
     }
@@ -375,5 +381,18 @@ footer {
         color: $main-color;
         text-align: center;
         opacity: 0.8;
+    }
+}
+
+.hero-animation {
+    animation: img-animation 1s ease-in-out;
+}
+
+@keyframes img-animation {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
     }
 }
