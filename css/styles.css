@@ -16,8 +16,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-backdrop-filter: contrast(60%) brightness(50%);
-          backdrop-filter: contrast(60%) brightness(50%);
+  background-blend-mode: overlay;
   position: relative;
   font-family: "Playfair Display", serif;
 }
